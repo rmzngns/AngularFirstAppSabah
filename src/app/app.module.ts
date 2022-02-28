@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { TodosComponent } from './pages/todos/todos.component';
+import { ButtonComponent } from './components/button/button.component';
+import { ComponentModule } from './components/component.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, HomeComponent, AboutComponent, TodosComponent], // uygulama içerisinde kullanılacak componentlerin tanımları yapılır
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule, // kendi uygulama modüllerimiz + npm yüklenen paket modülleri
+    AppRoutingModule,
+    ComponentModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], // uygulama içerisinde kullanılan servisler.
+  bootstrap: [AppComponent], // uygulamanın init olacağı component
 })
-export class AppModule { }
+export class AppModule {}

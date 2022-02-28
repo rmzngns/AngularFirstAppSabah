@@ -1,0 +1,21 @@
+<p>about works!</p>
+
+<ul>
+  <li *ngFor="let item of names">{{ item.name }} {{ item.surname }}</li>
+</ul>
+
+<app-button
+  (btnClicked)="click($event)"
+  [color]="'blue'"
+  [title]="'myButton'"
+></app-button>
+<app-button
+  (btnClicked)="click($event)"
+  [color]="'red'"
+  [title]="'myButton2'"
+></app-button>
+<app-button
+  (btnClicked)="click($event)"
+  [color]="'green'"
+  [title]="'myButton3'"
+></app-button>
