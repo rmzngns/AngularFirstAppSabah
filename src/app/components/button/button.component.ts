@@ -13,6 +13,8 @@ export class ButtonComponent implements OnInit {
   // buttonda bir eylem gerçekleşince çalışacak olan event demek
   @Output() btnClicked: EventEmitter<any> = new EventEmitter<any>();
   // btnClicked dili geçmiş zaman tipinde yazıyoruz.
+  // emit raise denk gelir.
+  // event emit ederek event fırlatırız.
 
   constructor() {}
 

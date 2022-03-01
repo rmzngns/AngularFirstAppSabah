@@ -1,0 +1,11 @@
+<p>test works!</p>
+
+<!-- [attributeName]="attributeValue" -->
+<!-- input yazım şekli -->
+<!-- $event servisi event üzerinden değer alıyoruz -->
+
+<app-button
+  [title]="'btn1'"
+  [color]="'red'"
+  (btnClicked)="click($event)"
+></app-button>

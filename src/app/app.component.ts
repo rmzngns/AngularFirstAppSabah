@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { HomeComponent } from './pages/home/home.component';
 
-// directive
+// meta data
 @Component({
   selector: 'app-root', // componentin diğer sayfalardan çağrılma ismi
   templateUrl: './app.component.html', // html dosyası konumu

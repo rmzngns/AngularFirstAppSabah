@@ -8,9 +8,16 @@ import { AboutComponent } from './pages/about/about.component';
 import { TodosComponent } from './pages/todos/todos.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ComponentModule } from './components/component.module';
+import { TestComponent } from './pages/test/test.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, TodosComponent], // uygulama içerisinde kullanılacak componentlerin tanımları yapılır
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    TodosComponent,
+    TestComponent,
+  ], // uygulama içerisinde kullanılacak componentlerin tanımları yapılır
   imports: [
     BrowserModule, // kendi uygulama modüllerimiz + npm yüklenen paket modülleri
     AppRoutingModule,
