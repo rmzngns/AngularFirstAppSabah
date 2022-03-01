@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "razor-muhammed":"ng serve"
+    "razor-muhammed": "ng serve"
   },
   "private": true,
   "dependencies": {

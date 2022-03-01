@@ -1,12 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ButtonComponent } from './button/button.component';
-import { SelectComponent } from './select/select.component';
+import { ImgComponent } from "./img/img.component";
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { ButtonComponent } from "./button/button.component";
+import { SelectComponent } from "./select/select.component";
 
 @NgModule({
-  declarations: [ButtonComponent, SelectComponent],
+  declarations: [ButtonComponent, SelectComponent, ImgComponent],
   imports: [CommonModule],
-  exports: [ButtonComponent, SelectComponent], // componenti moduleden dışarı çıkartır.
+  exports: [ButtonComponent, SelectComponent, ImgComponent], // componenti moduleden dışarı çıkartır.
 })
 export class ComponentModule {} // AppModule içerisine ComponentModule Import edip uygulama genelinde bu componenti kullanabiliriz. AppModule altındaki componentlerin sadece page component olmasına dikkat edelim.
 

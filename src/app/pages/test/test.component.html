@@ -4,19 +4,14 @@
 <!-- input yazım şekli -->
 <!-- $event servisi event üzerinden değer alıyoruz -->
 
-<app-button
-  [title]="'btn1'"
-  [color]="'red'"
-  (btnClicked)="click($event)"
-></app-button>
+<app-button [title]="'btn1'" [color]="'red'" (btnClicked)="click($event)"></app-button>
 
-<app-select
-  [cities]="[
+<app-select [cities]="[
     { name: 'izmir', code: '35' },
     { name: 'istanbul', code: '34' },
     { name: 'adıyaman', code: '02' }
-  ]"
-  (selected)="citySelect($event)"
-></app-select>
+  ]" (selected)="citySelect($event)"></app-select>
 
 <!-- <app-image [base64]="" [imgUrl]="" [width]="200" [height]="300"></app-image> -->
+<app-img [width]="'300'" [height]="'300'" [url]="'https://miro.medium.com/max/760/1*IpJblEKT0Rbrg61W_LM0-A.png'">
+</app-img>
