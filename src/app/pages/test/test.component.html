@@ -9,3 +9,14 @@
   [color]="'red'"
   (btnClicked)="click($event)"
 ></app-button>
+
+<app-select
+  [cities]="[
+    { name: 'izmir', code: '35' },
+    { name: 'istanbul', code: '34' },
+    { name: 'adıyaman', code: '02' }
+  ]"
+  (selected)="citySelect($event)"
+></app-select>
+
+<!-- <app-image [base64]="" [imgUrl]="" [width]="200" [height]="300"></app-image> -->

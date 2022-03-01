@@ -13,4 +13,8 @@ export class TestComponent implements OnInit {
     console.log('value', value);
     alert('Tıklandı ' + value);
   }
+
+  citySelect(value: any) {
+    alert(value);
+  }
 }
